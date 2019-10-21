@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		body {
+    font-family:      Arial, Helvetica, sans-serif;
+    font-weight:      bold;
+}
+
+#mainContent {
+    background-color: #B1DBFC;
+    overflow:         hidden;
+    width:            350px;
+    height:           200px;
+    padding:           10px;
+    border-radius:     20px;
+
+}
+
+#myImage {
+    -moz-animation-name:               imageSlide;
+    -moz-animation-duration:           2s;
+    -moz-animation-timing-function:    ease-in;
+    -moz-animation-iteration-count:    infinite;
+    
+    -webkit-animation-name:            imageSlide;
+    -webkit-animation-duration:        2s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-iteration-count: infinite;
+    
+    animation-name:                    imageSlide;
+    animation-duration:                2s;
+    animation-timing-function:         ease-in;
+    animation-iteration-count:         infinite;
+ 
+    width:       100px;
+    height:      100px;
+    position:    relative;
+    padding-top: 50px;
+}
+ 
+@-moz-keyframes imageSlide {
+      0% {left: -150px;}
+     20% {left:   50px;}
+     80% {left:  200px;}
+    100% {left:  600px;}
+}
+ 
+@-webkit-keyframes imageSlide {
+      0% {left: -150px;}
+     20% {left:   50px;}
+     80% {left:  200px;}
+    100% {left:  600px;}
+}
+ 
+@-ms-keyframes imageSlide {
+      0% {left: -150px;}
+     20% {left:   50px;}
+     80% {left:  200px;}
+    100% {left:  600px;}
+}
+	</style>
+</head>
+<body>
+
+
+<h1>CSS 3 Animation example</h1>
+
+<div id="mainContent"> 
+    <img id="myImage" src="http://www.kirupa.com/html5/examples/images/blueArrow.png">
+</div>
+
+<p>
+    Example adapted from <a href="http://www.kirupa.com/html5/examples/css_animation.htm">kirupa</a>
+</p>
+</body>
+</html>
